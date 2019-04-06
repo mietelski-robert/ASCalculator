@@ -1,0 +1,19 @@
+//
+//  TransformationCommandInterface.swift
+//  ASCalculator
+//
+//  Created by Robert Mietelski on 06.04.2019.
+//  Copyright © 2019 Robert Mietelski. All rights reserved.
+//
+
+import Foundation
+
+enum TransformationResult {
+    case expression(value: String)
+    case number(value: Double)
+    case error(value: Error)
+}
+
+protocol TransformationCommandInterface: class {
+    func execute(with pattern: String, completion: @escaping (TransformationResult) -> Void)
+}
