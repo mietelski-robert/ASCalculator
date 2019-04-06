@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  Calculator
+
+  Created by Robert Mietelski on 05.04.2019.
+  Copyright © 2019 Robert Mietelski. All rights reserved.
+*/
+
+// MARK: - Errors -
+
+"error.title" = "Error";
+"error.loadingViewFailed" = "Loading view failed";
+"error.invalidExpression" = "Expression is invalid";
+
+// MARK: - Button -
+
+"button.ok" = "Ok";
+
+// MARK: - Calculator view -
+
+"calculator.view.title" = "Calculator";
