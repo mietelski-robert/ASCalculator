@@ -12,15 +12,15 @@ class CalculateService {
     
     // MARK: - Public properties -
     
-    let numberConverter: NumberConverter
+    let postfixReslover: PostfixReslover
     let postfixConverter: PostfixConverter
     
     // MARK: - Initialization -
     
-    init(numberConverter: NumberConverter = NumberConverter(),
+    init(postfixReslover: PostfixReslover = PostfixReslover(),
          postfixConverter: PostfixConverter = PostfixConverter()) {
         
-        self.numberConverter = numberConverter
+        self.postfixReslover = postfixReslover
         self.postfixConverter = postfixConverter
     }
 }
@@ -29,9 +29,9 @@ class CalculateService {
 
 extension CalculateService: CalculateServiceInterface {
     func evaluate(expression: Expression) throws -> Double {
-        let infixInput = try expression.split()
+        let infixInput = try ExpressionSplitter(expression: expression).split()
         let postfixInput = self.postfixConverter.convert(infixInput: infixInput)
         
-        return try self.numberConverter.calculate(postfixInput: postfixInput)
+        return try self.postfixReslover.resolve(postfixInput: postfixInput)
     }
 }
