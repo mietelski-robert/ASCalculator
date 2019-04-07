@@ -1,5 +1,5 @@
 //
-//  CalculateServiceInterface.swift
+//  ArithmeticCommandInterface.swift
 //  ASCalculator
 //
 //  Created by Robert Mietelski on 06.04.2019.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol CalculateServiceInterface: class {
-    func evaluate(expression: Expression) throws -> Double
+protocol ArithmeticCommandInterface: class {
+    func execute(lhs: Double, rhs: Double) throws -> Double
 }

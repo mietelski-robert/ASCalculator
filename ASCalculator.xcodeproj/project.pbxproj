@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		664DECD2225916E1008D7EBC /* SubtractionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664DECD1225916E1008D7EBC /* SubtractionCommand.swift */; };
+		664DECD42259170F008D7EBC /* DivisionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664DECD32259170F008D7EBC /* DivisionCommand.swift */; };
+		664DECD62259173B008D7EBC /* MultiplicationCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664DECD52259173B008D7EBC /* MultiplicationCommand.swift */; };
+		664DECD822591CC8008D7EBC /* ParenthesisSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664DECD722591CC8008D7EBC /* ParenthesisSymbol.swift */; };
+		664DECDA22591D9A008D7EBC /* OperatorSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664DECD922591D9A008D7EBC /* OperatorSymbol.swift */; };
+		664DECDC225923B8008D7EBC /* NumberSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664DECDB225923B8008D7EBC /* NumberSymbol.swift */; };
 		66DDC01B22590C0900BDC7B6 /* ASCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC01A22590C0900BDC7B6 /* ASCalculatorTests.swift */; };
 		66DDC02622590C0900BDC7B6 /* ASCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC02522590C0900BDC7B6 /* ASCalculatorUITests.swift */; };
 		66DDC08022590C6D00BDC7B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66DDC03422590C6D00BDC7B6 /* Assets.xcassets */; };
@@ -15,9 +21,16 @@
 		66DDC08322590C6D00BDC7B6 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66DDC03922590C6D00BDC7B6 /* Colors.xcassets */; };
 		66DDC08422590C6D00BDC7B6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66DDC03A22590C6D00BDC7B6 /* Localizable.strings */; };
 		66DDC08522590C6D00BDC7B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC03C22590C6D00BDC7B6 /* AppDelegate.swift */; };
+		66DDC08622590C6D00BDC7B6 /* AdditionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC03F22590C6D00BDC7B6 /* AdditionCommand.swift */; };
 		66DDC08722590C6D00BDC7B6 /* AppendCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC04122590C6D00BDC7B6 /* AppendCommand.swift */; };
 		66DDC08822590C6D00BDC7B6 /* CalculateCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC04222590C6D00BDC7B6 /* CalculateCommand.swift */; };
 		66DDC08922590C6D00BDC7B6 /* TruncateCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC04322590C6D00BDC7B6 /* TruncateCommand.swift */; };
+		66DDC08A22590C6D00BDC7B6 /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC04522590C6D00BDC7B6 /* Argument.swift */; };
+		66DDC08B22590C6D00BDC7B6 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC04622590C6D00BDC7B6 /* Expression.swift */; };
+		66DDC08C22590C6D00BDC7B6 /* KeyboardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC04722590C6D00BDC7B6 /* KeyboardItem.swift */; };
+		66DDC08D22590C6D00BDC7B6 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC04822590C6D00BDC7B6 /* Operator.swift */; };
+		66DDC08E22590C6D00BDC7B6 /* Parenthesis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC04922590C6D00BDC7B6 /* Parenthesis.swift */; };
+		66DDC08F22590C6D00BDC7B6 /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC04A22590C6D00BDC7B6 /* ValidationResult.swift */; };
 		66DDC09022590C6D00BDC7B6 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC04C22590C6D00BDC7B6 /* String+Extensions.swift */; };
 		66DDC09122590C6D00BDC7B6 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC04D22590C6D00BDC7B6 /* UINavigationController+Extensions.swift */; };
 		66DDC09222590C6D00BDC7B6 /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC04E22590C6D00BDC7B6 /* UIStoryboard+Extensions.swift */; };
@@ -28,11 +41,14 @@
 		66DDC09722590C6D00BDC7B6 /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC05622590C6D00BDC7B6 /* PresenterInterface.swift */; };
 		66DDC09822590C6D00BDC7B6 /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC05722590C6D00BDC7B6 /* ViewInterface.swift */; };
 		66DDC09922590C6D00BDC7B6 /* WireframeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC05822590C6D00BDC7B6 /* WireframeInterface.swift */; };
+		66DDC09A22590C6D00BDC7B6 /* ArithmeticCommandInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC05A22590C6D00BDC7B6 /* ArithmeticCommandInterface.swift */; };
 		66DDC09B22590C6D00BDC7B6 /* TransformationCommandInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC05B22590C6D00BDC7B6 /* TransformationCommandInterface.swift */; };
 		66DDC09C22590C6D00BDC7B6 /* DisplayAttributedStringFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC05D22590C6D00BDC7B6 /* DisplayAttributedStringFactory.swift */; };
 		66DDC09D22590C6D00BDC7B6 /* KeyboardItemFactoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC05E22590C6D00BDC7B6 /* KeyboardItemFactoryInterface.swift */; };
 		66DDC09E22590C6D00BDC7B6 /* KeyboardItemStyleFactoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC05F22590C6D00BDC7B6 /* KeyboardItemStyleFactoryInterface.swift */; };
 		66DDC09F22590C6D00BDC7B6 /* CalculateServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC06122590C6D00BDC7B6 /* CalculateServiceInterface.swift */; };
+		66DDC0A022590C6D00BDC7B6 /* ValidableInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC06322590C6D00BDC7B6 /* ValidableInterface.swift */; };
+		66DDC0A122590C6D00BDC7B6 /* ValidatorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC06422590C6D00BDC7B6 /* ValidatorInterface.swift */; };
 		66DDC0A222590C6D00BDC7B6 /* ErrorDialogInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC06622590C6D00BDC7B6 /* ErrorDialogInterface.swift */; };
 		66DDC0A322590C6D00BDC7B6 /* CalculatorInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC06922590C6D00BDC7B6 /* CalculatorInteractor.swift */; };
 		66DDC0A422590C6D00BDC7B6 /* CalculatorInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC06A22590C6D00BDC7B6 /* CalculatorInteractorInterface.swift */; };
@@ -48,7 +64,8 @@
 		66DDC0AE22590C6D00BDC7B6 /* CalculatorWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC07722590C6D00BDC7B6 /* CalculatorWireframe.swift */; };
 		66DDC0AF22590C6D00BDC7B6 /* CalculatorWireframeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC07822590C6D00BDC7B6 /* CalculatorWireframeInterface.swift */; };
 		66DDC0B022590C6D00BDC7B6 /* CalculateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC07A22590C6D00BDC7B6 /* CalculateService.swift */; };
-		66DDC0B522590DE400BDC7B6 /* KeyboardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC0B422590DE400BDC7B6 /* KeyboardItem.swift */; };
+		66DDC0B122590C6D00BDC7B6 /* NumberConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC07B22590C6D00BDC7B6 /* NumberConverter.swift */; };
+		66DDC0B222590C6D00BDC7B6 /* PostfixConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC07C22590C6D00BDC7B6 /* PostfixConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +86,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		664DECCF225911E7008D7EBC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		664DECD1225916E1008D7EBC /* SubtractionCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionCommand.swift; sourceTree = "<group>"; };
+		664DECD32259170F008D7EBC /* DivisionCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionCommand.swift; sourceTree = "<group>"; };
+		664DECD52259173B008D7EBC /* MultiplicationCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationCommand.swift; sourceTree = "<group>"; };
+		664DECD722591CC8008D7EBC /* ParenthesisSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParenthesisSymbol.swift; sourceTree = "<group>"; };
+		664DECD922591D9A008D7EBC /* OperatorSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorSymbol.swift; sourceTree = "<group>"; };
+		664DECDB225923B8008D7EBC /* NumberSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberSymbol.swift; sourceTree = "<group>"; };
 		66DDC00222590C0800BDC7B6 /* ASCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66DDC01622590C0900BDC7B6 /* ASCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66DDC01A22590C0900BDC7B6 /* ASCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASCalculatorTests.swift; sourceTree = "<group>"; };
@@ -83,9 +105,16 @@
 		66DDC03922590C6D00BDC7B6 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		66DDC03A22590C6D00BDC7B6 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		66DDC03C22590C6D00BDC7B6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		66DDC03F22590C6D00BDC7B6 /* AdditionCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionCommand.swift; sourceTree = "<group>"; };
 		66DDC04122590C6D00BDC7B6 /* AppendCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppendCommand.swift; sourceTree = "<group>"; };
 		66DDC04222590C6D00BDC7B6 /* CalculateCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateCommand.swift; sourceTree = "<group>"; };
 		66DDC04322590C6D00BDC7B6 /* TruncateCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TruncateCommand.swift; sourceTree = "<group>"; };
+		66DDC04522590C6D00BDC7B6 /* Argument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Argument.swift; sourceTree = "<group>"; };
+		66DDC04622590C6D00BDC7B6 /* Expression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
+		66DDC04722590C6D00BDC7B6 /* KeyboardItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardItem.swift; sourceTree = "<group>"; };
+		66DDC04822590C6D00BDC7B6 /* Operator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
+		66DDC04922590C6D00BDC7B6 /* Parenthesis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parenthesis.swift; sourceTree = "<group>"; };
+		66DDC04A22590C6D00BDC7B6 /* ValidationResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationResult.swift; sourceTree = "<group>"; };
 		66DDC04C22590C6D00BDC7B6 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		66DDC04D22590C6D00BDC7B6 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
 		66DDC04E22590C6D00BDC7B6 /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
@@ -96,11 +125,14 @@
 		66DDC05622590C6D00BDC7B6 /* PresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
 		66DDC05722590C6D00BDC7B6 /* ViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
 		66DDC05822590C6D00BDC7B6 /* WireframeInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WireframeInterface.swift; sourceTree = "<group>"; };
+		66DDC05A22590C6D00BDC7B6 /* ArithmeticCommandInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArithmeticCommandInterface.swift; sourceTree = "<group>"; };
 		66DDC05B22590C6D00BDC7B6 /* TransformationCommandInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformationCommandInterface.swift; sourceTree = "<group>"; };
 		66DDC05D22590C6D00BDC7B6 /* DisplayAttributedStringFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayAttributedStringFactory.swift; sourceTree = "<group>"; };
 		66DDC05E22590C6D00BDC7B6 /* KeyboardItemFactoryInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardItemFactoryInterface.swift; sourceTree = "<group>"; };
 		66DDC05F22590C6D00BDC7B6 /* KeyboardItemStyleFactoryInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardItemStyleFactoryInterface.swift; sourceTree = "<group>"; };
 		66DDC06122590C6D00BDC7B6 /* CalculateServiceInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateServiceInterface.swift; sourceTree = "<group>"; };
+		66DDC06322590C6D00BDC7B6 /* ValidableInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidableInterface.swift; sourceTree = "<group>"; };
+		66DDC06422590C6D00BDC7B6 /* ValidatorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorInterface.swift; sourceTree = "<group>"; };
 		66DDC06622590C6D00BDC7B6 /* ErrorDialogInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorDialogInterface.swift; sourceTree = "<group>"; };
 		66DDC06922590C6D00BDC7B6 /* CalculatorInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorInteractor.swift; sourceTree = "<group>"; };
 		66DDC06A22590C6D00BDC7B6 /* CalculatorInteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorInteractorInterface.swift; sourceTree = "<group>"; };
@@ -116,7 +148,9 @@
 		66DDC07722590C6D00BDC7B6 /* CalculatorWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorWireframe.swift; sourceTree = "<group>"; };
 		66DDC07822590C6D00BDC7B6 /* CalculatorWireframeInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorWireframeInterface.swift; sourceTree = "<group>"; };
 		66DDC07A22590C6D00BDC7B6 /* CalculateService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateService.swift; sourceTree = "<group>"; };
-		66DDC0B422590DE400BDC7B6 /* KeyboardItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardItem.swift; sourceTree = "<group>"; };
+		66DDC07B22590C6D00BDC7B6 /* NumberConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberConverter.swift; sourceTree = "<group>"; };
+		66DDC07C22590C6D00BDC7B6 /* PostfixConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostfixConverter.swift; sourceTree = "<group>"; };
+		66DDC07F22590C6D00BDC7B6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +245,7 @@
 				66DDC04B22590C6D00BDC7B6 /* Extensions */,
 				66DDC05322590C6D00BDC7B6 /* Interfaces */,
 				66DDC03D22590C6D00BDC7B6 /* Commands */,
+				66DDC07D22590C6D00BDC7B6 /* Validators */,
 				66DDC05022590C6D00BDC7B6 /* Factories */,
 				66DDC07922590C6D00BDC7B6 /* Services */,
 				66DDC04422590C6D00BDC7B6 /* Entities */,
@@ -222,9 +257,21 @@
 		66DDC03D22590C6D00BDC7B6 /* Commands */ = {
 			isa = PBXGroup;
 			children = (
+				66DDC03E22590C6D00BDC7B6 /* Arithmetic */,
 				66DDC04022590C6D00BDC7B6 /* Transformation */,
 			);
 			path = Commands;
+			sourceTree = "<group>";
+		};
+		66DDC03E22590C6D00BDC7B6 /* Arithmetic */ = {
+			isa = PBXGroup;
+			children = (
+				66DDC03F22590C6D00BDC7B6 /* AdditionCommand.swift */,
+				664DECD1225916E1008D7EBC /* SubtractionCommand.swift */,
+				664DECD32259170F008D7EBC /* DivisionCommand.swift */,
+				664DECD52259173B008D7EBC /* MultiplicationCommand.swift */,
+			);
+			path = Arithmetic;
 			sourceTree = "<group>";
 		};
 		66DDC04022590C6D00BDC7B6 /* Transformation */ = {
@@ -240,7 +287,15 @@
 		66DDC04422590C6D00BDC7B6 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				66DDC0B422590DE400BDC7B6 /* KeyboardItem.swift */,
+				66DDC04522590C6D00BDC7B6 /* Argument.swift */,
+				66DDC04622590C6D00BDC7B6 /* Expression.swift */,
+				66DDC04722590C6D00BDC7B6 /* KeyboardItem.swift */,
+				66DDC04822590C6D00BDC7B6 /* Operator.swift */,
+				66DDC04922590C6D00BDC7B6 /* Parenthesis.swift */,
+				66DDC04A22590C6D00BDC7B6 /* ValidationResult.swift */,
+				664DECD722591CC8008D7EBC /* ParenthesisSymbol.swift */,
+				664DECD922591D9A008D7EBC /* OperatorSymbol.swift */,
+				664DECDB225923B8008D7EBC /* NumberSymbol.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -272,6 +327,7 @@
 				66DDC05922590C6D00BDC7B6 /* Commands */,
 				66DDC05C22590C6D00BDC7B6 /* Factories */,
 				66DDC06022590C6D00BDC7B6 /* Services */,
+				66DDC06222590C6D00BDC7B6 /* Validators */,
 				66DDC06522590C6D00BDC7B6 /* Views */,
 			);
 			path = Interfaces;
@@ -291,6 +347,7 @@
 		66DDC05922590C6D00BDC7B6 /* Commands */ = {
 			isa = PBXGroup;
 			children = (
+				66DDC05A22590C6D00BDC7B6 /* ArithmeticCommandInterface.swift */,
 				66DDC05B22590C6D00BDC7B6 /* TransformationCommandInterface.swift */,
 			);
 			path = Commands;
@@ -314,6 +371,15 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		66DDC06222590C6D00BDC7B6 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				66DDC06322590C6D00BDC7B6 /* ValidableInterface.swift */,
+				66DDC06422590C6D00BDC7B6 /* ValidatorInterface.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
 		66DDC06522590C6D00BDC7B6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -327,8 +393,8 @@
 			children = (
 				66DDC06822590C6D00BDC7B6 /* Interactor */,
 				66DDC06B22590C6D00BDC7B6 /* Presenter */,
-				66DDC06E22590C6D00BDC7B6 /* View */,
 				66DDC07622590C6D00BDC7B6 /* Wireframe */,
+				66DDC06E22590C6D00BDC7B6 /* View */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -378,14 +444,23 @@
 			isa = PBXGroup;
 			children = (
 				66DDC07A22590C6D00BDC7B6 /* CalculateService.swift */,
+				66DDC07B22590C6D00BDC7B6 /* NumberConverter.swift */,
+				66DDC07C22590C6D00BDC7B6 /* PostfixConverter.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		66DDC07D22590C6D00BDC7B6 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Validators;
 			sourceTree = "<group>";
 		};
 		66DDC07E22590C6D00BDC7B6 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				664DECCF225911E7008D7EBC /* Info.plist */,
+				66DDC07F22590C6D00BDC7B6 /* Info.plist */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -527,17 +602,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				66DDC0A622590C6D00BDC7B6 /* CalculatorPresenterInterface.swift in Sources */,
+				66DDC0A022590C6D00BDC7B6 /* ValidableInterface.swift in Sources */,
 				66DDC09122590C6D00BDC7B6 /* UINavigationController+Extensions.swift in Sources */,
+				664DECD42259170F008D7EBC /* DivisionCommand.swift in Sources */,
+				66DDC08F22590C6D00BDC7B6 /* ValidationResult.swift in Sources */,
 				66DDC0AA22590C6D00BDC7B6 /* DisplayHeaderView.swift in Sources */,
 				66DDC0AC22590C6D00BDC7B6 /* KeyboardViewCell.swift in Sources */,
+				66DDC0B222590C6D00BDC7B6 /* PostfixConverter.swift in Sources */,
 				66DDC09E22590C6D00BDC7B6 /* KeyboardItemStyleFactoryInterface.swift in Sources */,
 				66DDC0A822590C6D00BDC7B6 /* CalculatorViewController.swift in Sources */,
-				66DDC0B522590DE400BDC7B6 /* KeyboardItem.swift in Sources */,
 				66DDC08522590C6D00BDC7B6 /* AppDelegate.swift in Sources */,
 				66DDC0A322590C6D00BDC7B6 /* CalculatorInteractor.swift in Sources */,
 				66DDC0AF22590C6D00BDC7B6 /* CalculatorWireframeInterface.swift in Sources */,
+				664DECD2225916E1008D7EBC /* SubtractionCommand.swift in Sources */,
 				66DDC09722590C6D00BDC7B6 /* PresenterInterface.swift in Sources */,
+				66DDC08622590C6D00BDC7B6 /* AdditionCommand.swift in Sources */,
 				66DDC09B22590C6D00BDC7B6 /* TransformationCommandInterface.swift in Sources */,
+				66DDC08E22590C6D00BDC7B6 /* Parenthesis.swift in Sources */,
+				66DDC09A22590C6D00BDC7B6 /* ArithmeticCommandInterface.swift in Sources */,
 				66DDC09022590C6D00BDC7B6 /* String+Extensions.swift in Sources */,
 				66DDC09622590C6D00BDC7B6 /* InteractorInterface.swift in Sources */,
 				66DDC09222590C6D00BDC7B6 /* UIStoryboard+Extensions.swift in Sources */,
@@ -546,18 +628,28 @@
 				66DDC08822590C6D00BDC7B6 /* CalculateCommand.swift in Sources */,
 				66DDC09D22590C6D00BDC7B6 /* KeyboardItemFactoryInterface.swift in Sources */,
 				66DDC08722590C6D00BDC7B6 /* AppendCommand.swift in Sources */,
+				66DDC0A122590C6D00BDC7B6 /* ValidatorInterface.swift in Sources */,
 				66DDC0A422590C6D00BDC7B6 /* CalculatorInteractorInterface.swift in Sources */,
+				664DECD62259173B008D7EBC /* MultiplicationCommand.swift in Sources */,
 				66DDC0B022590C6D00BDC7B6 /* CalculateService.swift in Sources */,
 				66DDC0A522590C6D00BDC7B6 /* CalculatorPresenter.swift in Sources */,
 				66DDC0AE22590C6D00BDC7B6 /* CalculatorWireframe.swift in Sources */,
+				664DECDA22591D9A008D7EBC /* OperatorSymbol.swift in Sources */,
+				66DDC08A22590C6D00BDC7B6 /* Argument.swift in Sources */,
 				66DDC0A222590C6D00BDC7B6 /* ErrorDialogInterface.swift in Sources */,
+				66DDC08C22590C6D00BDC7B6 /* KeyboardItem.swift in Sources */,
 				66DDC09922590C6D00BDC7B6 /* WireframeInterface.swift in Sources */,
 				66DDC09522590C6D00BDC7B6 /* KeyboardItemStyleFactory.swift in Sources */,
 				66DDC09F22590C6D00BDC7B6 /* CalculateServiceInterface.swift in Sources */,
 				66DDC09422590C6D00BDC7B6 /* KeyboardItemFactory.swift in Sources */,
 				66DDC09C22590C6D00BDC7B6 /* DisplayAttributedStringFactory.swift in Sources */,
+				66DDC08B22590C6D00BDC7B6 /* Expression.swift in Sources */,
+				664DECDC225923B8008D7EBC /* NumberSymbol.swift in Sources */,
+				66DDC08D22590C6D00BDC7B6 /* Operator.swift in Sources */,
 				66DDC0A922590C6D00BDC7B6 /* CalculatorViewInterface.swift in Sources */,
 				66DDC08922590C6D00BDC7B6 /* TruncateCommand.swift in Sources */,
+				66DDC0B122590C6D00BDC7B6 /* NumberConverter.swift in Sources */,
+				664DECD822591CC8008D7EBC /* ParenthesisSymbol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

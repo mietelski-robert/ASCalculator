@@ -20,27 +20,27 @@ extension KeyboardItemFactoryInterface {
     func makeKeyboardItems() -> [KeyboardItem] {
         return [self.makeClearItem(with: "C"),
                 self.makeDeleteItem(with: "<"),
-                self.makeOperatorItem(with: "("),
-                self.makeOperatorItem(with: ")"),
+                self.makeOperatorItem(with: String(ParenthesisSymbol.opening)),
+                self.makeOperatorItem(with: String(ParenthesisSymbol.closing)),
                 
-                self.makeNumberItem(with: "7"),
-                self.makeNumberItem(with: "8"),
-                self.makeNumberItem(with: "9"),
-                self.makeOperatorItem(with: "÷"),
+                self.makeNumberItem(with: String(NumberSymbol.seven)),
+                self.makeNumberItem(with: String(NumberSymbol.eight)),
+                self.makeNumberItem(with: String(NumberSymbol.nine)),
+                self.makeOperatorItem(with: String(OperatorSymbol.division)),
                 
-                self.makeNumberItem(with: "4"),
-                self.makeNumberItem(with: "5"),
-                self.makeNumberItem(with: "6"),
-                self.makeOperatorItem(with: "x"),
+                self.makeNumberItem(with: String(NumberSymbol.four)),
+                self.makeNumberItem(with: String(NumberSymbol.five)),
+                self.makeNumberItem(with: String(NumberSymbol.six)),
+                self.makeOperatorItem(with: String(OperatorSymbol.multiplication)),
                 
-                self.makeNumberItem(with: "1"),
-                self.makeNumberItem(with: "2"),
-                self.makeNumberItem(with: "3"),
-                self.makeOperatorItem(with: "-"),
+                self.makeNumberItem(with: String(NumberSymbol.one)),
+                self.makeNumberItem(with: String(NumberSymbol.two)),
+                self.makeNumberItem(with: String(NumberSymbol.three)),
+                self.makeOperatorItem(with: String(OperatorSymbol.subtraction)),
                 
-                self.makeNumberItem(with: "."),
-                self.makeNumberItem(with: "0"),
-                self.makeCalculateItem(with: "="),
-                self.makeOperatorItem(with: "+")]
+                self.makeNumberItem(with: String(NumberSymbol.dot)),
+                self.makeNumberItem(with: String(NumberSymbol.zero)),
+                self.makeCalculateItem(with: String(OperatorSymbol.assignment)),
+                self.makeOperatorItem(with: String(OperatorSymbol.addition))]
     }
 }

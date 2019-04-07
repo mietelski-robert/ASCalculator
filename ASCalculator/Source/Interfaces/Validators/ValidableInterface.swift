@@ -1,5 +1,5 @@
 //
-//  CalculateServiceInterface.swift
+//  ValidableInterface.swift
 //  ASCalculator
 //
 //  Created by Robert Mietelski on 06.04.2019.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol CalculateServiceInterface: class {
-    func evaluate(expression: Expression) throws -> Double
+protocol ValidableInterface: class {
+    func validate() -> ValidationResult
 }
