@@ -18,7 +18,13 @@
 		66D18B97225B9FEA00D5A576 /* digital (italic).ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66D18B93225B9FEA00D5A576 /* digital (italic).ttf */; };
 		66D18B9A225B9FEA00D5A576 /* digital.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66D18B96225B9FEA00D5A576 /* digital.ttf */; };
 		66D18B9C225BA06600D5A576 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D18B9B225BA06600D5A576 /* UIFont+Extensions.swift */; };
-		66DDC01B22590C0900BDC7B6 /* ASCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC01A22590C0900BDC7B6 /* ASCalculatorTests.swift */; };
+		66D18BBA225BC99A00D5A576 /* AdditionCommandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D18BB2225BC99A00D5A576 /* AdditionCommandTests.swift */; };
+		66D18BBB225BC99A00D5A576 /* DivisionCommandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D18BB3225BC99A00D5A576 /* DivisionCommandTests.swift */; };
+		66D18BBC225BC99A00D5A576 /* MultiplicationCommandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D18BB4225BC99A00D5A576 /* MultiplicationCommandTests.swift */; };
+		66D18BBD225BC99A00D5A576 /* SubtractionCommandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D18BB5225BC99A00D5A576 /* SubtractionCommandTests.swift */; };
+		66D18BBE225BC99A00D5A576 /* AppendCommandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D18BB7225BC99A00D5A576 /* AppendCommandTests.swift */; };
+		66D18BBF225BC99A00D5A576 /* CalculateCommandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D18BB8225BC99A00D5A576 /* CalculateCommandTests.swift */; };
+		66D18BC0225BC99A00D5A576 /* TruncateCommandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D18BB9225BC99A00D5A576 /* TruncateCommandTests.swift */; };
 		66DDC02622590C0900BDC7B6 /* ASCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC02522590C0900BDC7B6 /* ASCalculatorUITests.swift */; };
 		66DDC08022590C6D00BDC7B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66DDC03422590C6D00BDC7B6 /* Assets.xcassets */; };
 		66DDC08122590C6D00BDC7B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66DDC03522590C6D00BDC7B6 /* LaunchScreen.storyboard */; };
@@ -99,9 +105,15 @@
 		66D18B93225B9FEA00D5A576 /* digital (italic).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital (italic).ttf"; sourceTree = "<group>"; };
 		66D18B96225B9FEA00D5A576 /* digital.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = digital.ttf; sourceTree = "<group>"; };
 		66D18B9B225BA06600D5A576 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		66D18BB2225BC99A00D5A576 /* AdditionCommandTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionCommandTests.swift; sourceTree = "<group>"; };
+		66D18BB3225BC99A00D5A576 /* DivisionCommandTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DivisionCommandTests.swift; sourceTree = "<group>"; };
+		66D18BB4225BC99A00D5A576 /* MultiplicationCommandTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiplicationCommandTests.swift; sourceTree = "<group>"; };
+		66D18BB5225BC99A00D5A576 /* SubtractionCommandTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtractionCommandTests.swift; sourceTree = "<group>"; };
+		66D18BB7225BC99A00D5A576 /* AppendCommandTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppendCommandTests.swift; sourceTree = "<group>"; };
+		66D18BB8225BC99A00D5A576 /* CalculateCommandTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateCommandTests.swift; sourceTree = "<group>"; };
+		66D18BB9225BC99A00D5A576 /* TruncateCommandTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TruncateCommandTests.swift; sourceTree = "<group>"; };
 		66DDC00222590C0800BDC7B6 /* ASCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66DDC01622590C0900BDC7B6 /* ASCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		66DDC01A22590C0900BDC7B6 /* ASCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASCalculatorTests.swift; sourceTree = "<group>"; };
 		66DDC01C22590C0900BDC7B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66DDC02122590C0900BDC7B6 /* ASCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66DDC02522590C0900BDC7B6 /* ASCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASCalculatorUITests.swift; sourceTree = "<group>"; };
@@ -191,6 +203,36 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		66D18BB0225BC99A00D5A576 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				66D18BB1225BC99A00D5A576 /* Arithmetic */,
+				66D18BB6225BC99A00D5A576 /* Transformation */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		66D18BB1225BC99A00D5A576 /* Arithmetic */ = {
+			isa = PBXGroup;
+			children = (
+				66D18BB2225BC99A00D5A576 /* AdditionCommandTests.swift */,
+				66D18BB3225BC99A00D5A576 /* DivisionCommandTests.swift */,
+				66D18BB4225BC99A00D5A576 /* MultiplicationCommandTests.swift */,
+				66D18BB5225BC99A00D5A576 /* SubtractionCommandTests.swift */,
+			);
+			path = Arithmetic;
+			sourceTree = "<group>";
+		};
+		66D18BB6225BC99A00D5A576 /* Transformation */ = {
+			isa = PBXGroup;
+			children = (
+				66D18BB7225BC99A00D5A576 /* AppendCommandTests.swift */,
+				66D18BB8225BC99A00D5A576 /* CalculateCommandTests.swift */,
+				66D18BB9225BC99A00D5A576 /* TruncateCommandTests.swift */,
+			);
+			path = Transformation;
+			sourceTree = "<group>";
+		};
 		66DDBFF922590C0800BDC7B6 = {
 			isa = PBXGroup;
 			children = (
@@ -224,7 +266,7 @@
 		66DDC01922590C0900BDC7B6 /* ASCalculatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				66DDC01A22590C0900BDC7B6 /* ASCalculatorTests.swift */,
+				66D18BB0225BC99A00D5A576 /* Commands */,
 				66DDC01C22590C0900BDC7B6 /* Info.plist */,
 			);
 			path = ASCalculatorTests;
@@ -657,7 +699,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66DDC01B22590C0900BDC7B6 /* ASCalculatorTests.swift in Sources */,
+				66D18BBE225BC99A00D5A576 /* AppendCommandTests.swift in Sources */,
+				66D18BBA225BC99A00D5A576 /* AdditionCommandTests.swift in Sources */,
+				66D18BBF225BC99A00D5A576 /* CalculateCommandTests.swift in Sources */,
+				66D18BBC225BC99A00D5A576 /* MultiplicationCommandTests.swift in Sources */,
+				66D18BC0225BC99A00D5A576 /* TruncateCommandTests.swift in Sources */,
+				66D18BBB225BC99A00D5A576 /* DivisionCommandTests.swift in Sources */,
+				66D18BBD225BC99A00D5A576 /* SubtractionCommandTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
