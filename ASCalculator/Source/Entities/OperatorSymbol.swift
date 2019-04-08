@@ -12,6 +12,6 @@ struct OperatorSymbol {
     static let addition: Character = "+"
     static let subtraction: Character = "-"
     static let division: Character = "÷"
-    static let multiplication: Character = "x"
+    static let multiplication: Character = "*"
     static let assignment: Character = "="
 }

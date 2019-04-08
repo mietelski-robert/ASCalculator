@@ -12,6 +12,7 @@ class DisplayHeaderView: UICollectionReusableView {
 
     // MARK: - Views -
     
+    @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var expressionTextField: UITextField!
     @IBOutlet weak var resultTextField: UITextField!
     
@@ -19,7 +20,8 @@ class DisplayHeaderView: UICollectionReusableView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        self.backgroundView.layer.cornerRadius = 8.0
     }
 }
 

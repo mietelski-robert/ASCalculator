@@ -89,15 +89,15 @@ class ExpressionSplitter {
     
     private func load(operator currentOperator: Operator) throws {
         if let lastOperator = self.operatorStack.last {
-            if (currentOperator.priority != Priority.low && currentOperator.priority == lastOperator.priority) || // **, //
-                currentOperator.priority > lastOperator.priority || // +*, -/
+            if (currentOperator.priority != Priority.low && currentOperator.priority == lastOperator.priority) || // e.g **, //
+                currentOperator.priority > lastOperator.priority || // e.g +*, -/
                 self.operatorStack.count > 1 {
                 throw ValidationError.invalidExpression
             } else {
                 self.numberStack.append(currentOperator.symbol)
             }
         } else {
-            if !self.numberStack.isEmpty {
+            if !self.numberStack.isEmpty {      // e.g 54+5
                 if let number = Double(characters: self.numberStack) {
                     self.arguments.append(Argument.number(value: number))
                     self.numberStack.removeAll()
@@ -105,14 +105,16 @@ class ExpressionSplitter {
                 } else {
                     throw ValidationError.invalidExpression
                 }
-            } else if self.arguments.isEmpty && currentOperator.priority == Priority.low {
-                if currentOperator.symbol == OperatorSymbol.subtraction {
-                    self.numberStack.append(currentOperator.symbol)
-                }
-            } else if !self.arguments.isEmpty {
-                self.operatorStack.append(currentOperator)
             } else {
-                throw ValidationError.invalidExpression
+                if (self.arguments.isEmpty || !self.parenthesisStack.isEmpty) && currentOperator.priority == Priority.low {
+                    if currentOperator.symbol == OperatorSymbol.subtraction {
+                        self.numberStack.append(currentOperator.symbol)
+                    }
+                } else if !self.arguments.isEmpty {
+                    self.operatorStack.append(currentOperator)
+                } else {
+                    throw ValidationError.invalidExpression
+                }
             }
         }
     }

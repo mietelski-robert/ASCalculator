@@ -62,6 +62,7 @@ extension CalculatorPresenter: CalculatorPresenterInterface {
             switch result {
             case .expression(let value):
                 self?.expression = value
+                self?.result = nil
             case .number(let value):
                 self?.result = value
             case .error(let value):

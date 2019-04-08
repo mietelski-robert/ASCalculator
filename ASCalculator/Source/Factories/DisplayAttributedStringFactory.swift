@@ -13,7 +13,7 @@ class DisplayAttributedStringFactory {
     // MARK: - Access methods -
     
     func makeAttributedExpression(with text: String?) -> NSAttributedString? {
-        let attributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 24.0, weight: .regular),
+        let attributes = [NSAttributedString.Key.font: UIFont.digitalFontOfSize(ofSize: 30.0),
                           NSAttributedString.Key.foregroundColor: UIColor.lightGray]
         
         return makeAttributedText(with: text, attributes: attributes)
@@ -23,15 +23,15 @@ class DisplayAttributedStringFactory {
         guard let number = number else {
             return nil
         }
-        let attributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 30.0, weight: .regular),
-                          NSAttributedString.Key.foregroundColor: UIColor.lightGray]
+        let attributes = [NSAttributedString.Key.font: UIFont.digitalFontOfSize(ofSize: 45.0),
+                          NSAttributedString.Key.foregroundColor: UIColor.darkGray]
         
         return NSAttributedString(string: "\(number)", attributes: attributes)
     }
     
     func makeAttributedError(with error: Error?) -> NSAttributedString? {
-        let attributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 45.0, weight: .semibold),
-                          NSAttributedString.Key.foregroundColor: UIColor.red.withAlphaComponent(0.8)]
+        let attributes = [NSAttributedString.Key.font: UIFont.digitalFontOfSize(ofSize: 30.0),
+                          NSAttributedString.Key.foregroundColor: UIColor.red]
         
         return makeAttributedText(with: error?.localizedDescription, attributes: attributes)
     }

@@ -15,6 +15,9 @@
 		664DECD822591CC8008D7EBC /* ParenthesisSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664DECD722591CC8008D7EBC /* ParenthesisSymbol.swift */; };
 		664DECDA22591D9A008D7EBC /* OperatorSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664DECD922591D9A008D7EBC /* OperatorSymbol.swift */; };
 		664DECDC225923B8008D7EBC /* NumberSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664DECDB225923B8008D7EBC /* NumberSymbol.swift */; };
+		66D18B97225B9FEA00D5A576 /* digital (italic).ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66D18B93225B9FEA00D5A576 /* digital (italic).ttf */; };
+		66D18B9A225B9FEA00D5A576 /* digital.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66D18B96225B9FEA00D5A576 /* digital.ttf */; };
+		66D18B9C225BA06600D5A576 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D18B9B225BA06600D5A576 /* UIFont+Extensions.swift */; };
 		66DDC01B22590C0900BDC7B6 /* ASCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC01A22590C0900BDC7B6 /* ASCalculatorTests.swift */; };
 		66DDC02622590C0900BDC7B6 /* ASCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC02522590C0900BDC7B6 /* ASCalculatorUITests.swift */; };
 		66DDC08022590C6D00BDC7B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66DDC03422590C6D00BDC7B6 /* Assets.xcassets */; };
@@ -32,7 +35,6 @@
 		66DDC08C22590C6D00BDC7B6 /* KeyboardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC04722590C6D00BDC7B6 /* KeyboardItem.swift */; };
 		66DDC08D22590C6D00BDC7B6 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC04822590C6D00BDC7B6 /* Operator.swift */; };
 		66DDC08E22590C6D00BDC7B6 /* Parenthesis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC04922590C6D00BDC7B6 /* Parenthesis.swift */; };
-		66DDC08F22590C6D00BDC7B6 /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC04A22590C6D00BDC7B6 /* ValidationResult.swift */; };
 		66DDC09022590C6D00BDC7B6 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC04C22590C6D00BDC7B6 /* String+Extensions.swift */; };
 		66DDC09122590C6D00BDC7B6 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC04D22590C6D00BDC7B6 /* UINavigationController+Extensions.swift */; };
 		66DDC09222590C6D00BDC7B6 /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DDC04E22590C6D00BDC7B6 /* UIStoryboard+Extensions.swift */; };
@@ -94,6 +96,9 @@
 		664DECD722591CC8008D7EBC /* ParenthesisSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParenthesisSymbol.swift; sourceTree = "<group>"; };
 		664DECD922591D9A008D7EBC /* OperatorSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorSymbol.swift; sourceTree = "<group>"; };
 		664DECDB225923B8008D7EBC /* NumberSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberSymbol.swift; sourceTree = "<group>"; };
+		66D18B93225B9FEA00D5A576 /* digital (italic).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital (italic).ttf"; sourceTree = "<group>"; };
+		66D18B96225B9FEA00D5A576 /* digital.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = digital.ttf; sourceTree = "<group>"; };
+		66D18B9B225BA06600D5A576 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
 		66DDC00222590C0800BDC7B6 /* ASCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66DDC01622590C0900BDC7B6 /* ASCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66DDC01A22590C0900BDC7B6 /* ASCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASCalculatorTests.swift; sourceTree = "<group>"; };
@@ -116,7 +121,6 @@
 		66DDC04722590C6D00BDC7B6 /* KeyboardItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardItem.swift; sourceTree = "<group>"; };
 		66DDC04822590C6D00BDC7B6 /* Operator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
 		66DDC04922590C6D00BDC7B6 /* Parenthesis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parenthesis.swift; sourceTree = "<group>"; };
-		66DDC04A22590C6D00BDC7B6 /* ValidationResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationResult.swift; sourceTree = "<group>"; };
 		66DDC04C22590C6D00BDC7B6 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		66DDC04D22590C6D00BDC7B6 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
 		66DDC04E22590C6D00BDC7B6 /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
@@ -178,6 +182,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66D18B92225B9FEA00D5A576 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				66D18B93225B9FEA00D5A576 /* digital (italic).ttf */,
+				66D18B96225B9FEA00D5A576 /* digital.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		66DDBFF922590C0800BDC7B6 = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +242,7 @@
 		66DDC03322590C6D00BDC7B6 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				66D18B92225B9FEA00D5A576 /* Fonts */,
 				66DDC03422590C6D00BDC7B6 /* Assets.xcassets */,
 				66DDC03522590C6D00BDC7B6 /* LaunchScreen.storyboard */,
 				66DDC03722590C6D00BDC7B6 /* Main.storyboard */,
@@ -295,7 +309,6 @@
 				66DDC04922590C6D00BDC7B6 /* Parenthesis.swift */,
 				664DECD722591CC8008D7EBC /* ParenthesisSymbol.swift */,
 				6602E436225A7CF800B34FA2 /* Priority.swift */,
-				66DDC04A22590C6D00BDC7B6 /* ValidationResult.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -307,6 +320,7 @@
 				66DDC04D22590C6D00BDC7B6 /* UINavigationController+Extensions.swift */,
 				66DDC04E22590C6D00BDC7B6 /* UIStoryboard+Extensions.swift */,
 				66DDC04F22590C6D00BDC7B6 /* UIViewController+Extensions.swift */,
+				66D18B9B225BA06600D5A576 /* UIFont+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -316,6 +330,7 @@
 			children = (
 				66DDC05122590C6D00BDC7B6 /* KeyboardItemFactory.swift */,
 				66DDC05222590C6D00BDC7B6 /* KeyboardItemStyleFactory.swift */,
+				66DDC05D22590C6D00BDC7B6 /* DisplayAttributedStringFactory.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -355,7 +370,6 @@
 		66DDC05C22590C6D00BDC7B6 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
-				66DDC05D22590C6D00BDC7B6 /* DisplayAttributedStringFactory.swift */,
 				66DDC05E22590C6D00BDC7B6 /* KeyboardItemFactoryInterface.swift */,
 				66DDC05F22590C6D00BDC7B6 /* KeyboardItemStyleFactoryInterface.swift */,
 			);
@@ -557,8 +571,10 @@
 				66DDC0AD22590C6D00BDC7B6 /* KeyboardViewCell.xib in Resources */,
 				66DDC08222590C6D00BDC7B6 /* Main.storyboard in Resources */,
 				66DDC08322590C6D00BDC7B6 /* Colors.xcassets in Resources */,
+				66D18B9A225B9FEA00D5A576 /* digital.ttf in Resources */,
 				66DDC0AB22590C6D00BDC7B6 /* DisplayHeaderView.xib in Resources */,
 				66DDC08022590C6D00BDC7B6 /* Assets.xcassets in Resources */,
+				66D18B97225B9FEA00D5A576 /* digital (italic).ttf in Resources */,
 				66DDC0A722590C6D00BDC7B6 /* Calculator.storyboard in Resources */,
 				66DDC08122590C6D00BDC7B6 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -588,7 +604,6 @@
 				66DDC0A622590C6D00BDC7B6 /* CalculatorPresenterInterface.swift in Sources */,
 				66DDC09122590C6D00BDC7B6 /* UINavigationController+Extensions.swift in Sources */,
 				664DECD42259170F008D7EBC /* DivisionCommand.swift in Sources */,
-				66DDC08F22590C6D00BDC7B6 /* ValidationResult.swift in Sources */,
 				66DDC0AA22590C6D00BDC7B6 /* DisplayHeaderView.swift in Sources */,
 				66DDC0AC22590C6D00BDC7B6 /* KeyboardViewCell.swift in Sources */,
 				66DDC0B222590C6D00BDC7B6 /* PostfixConverter.swift in Sources */,
@@ -613,6 +628,7 @@
 				66DDC08722590C6D00BDC7B6 /* AppendCommand.swift in Sources */,
 				66DDC0A422590C6D00BDC7B6 /* CalculatorInteractorInterface.swift in Sources */,
 				6602E437225A7CF800B34FA2 /* Priority.swift in Sources */,
+				66D18B9C225BA06600D5A576 /* UIFont+Extensions.swift in Sources */,
 				664DECD62259173B008D7EBC /* MultiplicationCommand.swift in Sources */,
 				66DDC0B022590C6D00BDC7B6 /* CalculateService.swift in Sources */,
 				66DDC0A522590C6D00BDC7B6 /* CalculatorPresenter.swift in Sources */,
@@ -809,15 +825,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6YSVD36L6;
 				INFOPLIST_FILE = "$(SRCROOT)/ASCalculator/Configuration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pl.mietelski.robert.ASCalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.mietelski.robert.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -826,15 +843,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6YSVD36L6;
 				INFOPLIST_FILE = "$(SRCROOT)/ASCalculator/Configuration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pl.mietelski.robert.ASCalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.mietelski.robert.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
