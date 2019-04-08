@@ -10,6 +10,20 @@ import UIKit
 
 class DisplayAttributedStringFactory {
 
+    // MARK: - Private properties -
+    
+    private var numberFormatter: NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.decimalSeparator = String(NumberSymbol.dot)
+        formatter.plusSign = String(OperatorSymbol.addition)
+        formatter.minusSign = String(OperatorSymbol.subtraction)
+        formatter.usesGroupingSeparator = false
+        formatter.maximumFractionDigits = 20
+        
+        return formatter
+    }()
+    
     // MARK: - Access methods -
     
     func makeAttributedExpression(with text: String?) -> NSAttributedString? {
@@ -20,13 +34,13 @@ class DisplayAttributedStringFactory {
     }
  
     func makeAttributedResult(with number: Double?) -> NSAttributedString? {
-        guard let number = number else {
+        guard let value = number, let string = self.numberFormatter.string(from: NSNumber(value: value)) else {
             return nil
         }
         let attributes = [NSAttributedString.Key.font: UIFont.digitalFontOfSize(ofSize: 45.0),
                           NSAttributedString.Key.foregroundColor: UIColor.darkGray]
         
-        return NSAttributedString(string: "\(number)", attributes: attributes)
+        return NSAttributedString(string: string, attributes: attributes)
     }
     
     func makeAttributedError(with error: Error?) -> NSAttributedString? {
