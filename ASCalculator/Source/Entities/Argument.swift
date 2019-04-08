@@ -1,5 +1,5 @@
 //
-//  CalculateServiceInterface.swift
+//  Argument.swift
 //  ASCalculator
 //
 //  Created by Robert Mietelski on 06.04.2019.
@@ -8,6 +8,8 @@
 
 import Foundation
 
-protocol CalculateServiceInterface: class {
-    func evaluate(expression: Expression) throws -> Double
+enum Argument {
+    case number(value: Double)
+    case `operator`(value: Operator)
+    case parenthesis(value: Parenthesis)
 }

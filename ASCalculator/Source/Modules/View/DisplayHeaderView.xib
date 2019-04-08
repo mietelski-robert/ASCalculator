@@ -4,62 +4,82 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="digital.ttf">
+            <string>Digital-7</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="DisplayHeaderView" customModule="Calculator" customModuleProvider="target">
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="DisplayHeaderView" customModule="ASCalculator" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="352" height="297"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jSA-Af-U66">
                     <rect key="frame" x="0.0" y="0.0" width="352" height="297"/>
                     <subviews>
-                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bWB-YG-et6">
-                            <rect key="frame" x="20" y="94.5" width="312" height="108"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zFj-5A-66Z">
+                            <rect key="frame" x="20" y="20" width="312" height="257"/>
                             <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zhc-FQ-TPR">
-                                    <rect key="frame" x="0.0" y="0.0" width="312" height="54"/>
-                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                    <connections>
-                                        <outlet property="delegate" destination="U6b-Vx-4bR" id="QdD-p4-HQx"/>
-                                    </connections>
-                                </textField>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="24H-1F-mzj">
-                                    <rect key="frame" x="0.0" y="54" width="312" height="54"/>
-                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="45"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                    <connections>
-                                        <outlet property="delegate" destination="U6b-Vx-4bR" id="Bms-9r-YlZ"/>
-                                    </connections>
-                                </textField>
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bWB-YG-et6">
+                                    <rect key="frame" x="10" y="94.5" width="292" height="68"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zhc-FQ-TPR">
+                                            <rect key="frame" x="0.0" y="0.0" width="292" height="28"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="30"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="U6b-Vx-4bR" id="QdD-p4-HQx"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="24H-1F-mzj">
+                                            <rect key="frame" x="0.0" y="28" width="292" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="qXC-xA-vAo"/>
+                                            </constraints>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="45"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="U6b-Vx-4bR" id="Bms-9r-YlZ"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="24H-1F-mzj" secondAttribute="bottom" id="8uk-Ip-pIU"/>
+                                        <constraint firstAttribute="trailing" secondItem="24H-1F-mzj" secondAttribute="trailing" id="Dij-wq-Tof"/>
+                                        <constraint firstItem="zhc-FQ-TPR" firstAttribute="top" secondItem="bWB-YG-et6" secondAttribute="top" id="RJo-iU-oaO"/>
+                                        <constraint firstItem="24H-1F-mzj" firstAttribute="top" secondItem="zhc-FQ-TPR" secondAttribute="bottom" id="UL1-0k-W2S"/>
+                                        <constraint firstAttribute="trailing" secondItem="zhc-FQ-TPR" secondAttribute="trailing" id="UbJ-wX-ZcG"/>
+                                        <constraint firstItem="zhc-FQ-TPR" firstAttribute="leading" relation="lessThanOrEqual" secondItem="bWB-YG-et6" secondAttribute="leading" id="mcn-Xo-7RK"/>
+                                        <constraint firstItem="24H-1F-mzj" firstAttribute="leading" relation="lessThanOrEqual" secondItem="bWB-YG-et6" secondAttribute="leading" id="qFI-zj-Hac"/>
+                                    </constraints>
+                                </view>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="bottom" secondItem="24H-1F-mzj" secondAttribute="bottom" id="8uk-Ip-pIU"/>
-                                <constraint firstAttribute="trailing" secondItem="24H-1F-mzj" secondAttribute="trailing" id="Dij-wq-Tof"/>
-                                <constraint firstItem="zhc-FQ-TPR" firstAttribute="top" secondItem="bWB-YG-et6" secondAttribute="top" id="RJo-iU-oaO"/>
-                                <constraint firstItem="24H-1F-mzj" firstAttribute="top" secondItem="zhc-FQ-TPR" secondAttribute="bottom" id="UL1-0k-W2S"/>
-                                <constraint firstAttribute="trailing" secondItem="zhc-FQ-TPR" secondAttribute="trailing" id="UbJ-wX-ZcG"/>
-                                <constraint firstItem="zhc-FQ-TPR" firstAttribute="leading" relation="lessThanOrEqual" secondItem="bWB-YG-et6" secondAttribute="leading" id="mcn-Xo-7RK"/>
-                                <constraint firstItem="24H-1F-mzj" firstAttribute="leading" relation="lessThanOrEqual" secondItem="bWB-YG-et6" secondAttribute="leading" id="qFI-zj-Hac"/>
-                                <constraint firstItem="24H-1F-mzj" firstAttribute="height" secondItem="zhc-FQ-TPR" secondAttribute="height" id="vHT-ve-pd3"/>
+                                <constraint firstItem="bWB-YG-et6" firstAttribute="leading" secondItem="zFj-5A-66Z" secondAttribute="leading" constant="10" id="AIz-ev-evX"/>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="bWB-YG-et6" secondAttribute="bottom" constant="10" id="PCl-e4-rmx"/>
+                                <constraint firstAttribute="trailing" secondItem="bWB-YG-et6" secondAttribute="trailing" constant="10" id="Qnd-JU-jg9"/>
+                                <constraint firstItem="bWB-YG-et6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="zFj-5A-66Z" secondAttribute="top" constant="10" id="W3B-Mi-d2L"/>
+                                <constraint firstItem="bWB-YG-et6" firstAttribute="centerY" secondItem="zFj-5A-66Z" secondAttribute="centerY" id="cbl-wx-R2R"/>
                             </constraints>
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="bWB-YG-et6" secondAttribute="trailing" constant="20" id="04d-S2-8ct"/>
-                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="bWB-YG-et6" secondAttribute="bottom" constant="20" id="4Ml-BD-KfS"/>
-                        <constraint firstItem="bWB-YG-et6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="jSA-Af-U66" secondAttribute="top" constant="20" id="jUa-5H-rGf"/>
-                        <constraint firstItem="bWB-YG-et6" firstAttribute="leading" secondItem="jSA-Af-U66" secondAttribute="leading" constant="20" id="kzT-35-hYE"/>
-                        <constraint firstItem="bWB-YG-et6" firstAttribute="centerY" secondItem="jSA-Af-U66" secondAttribute="centerY" id="mGH-y9-X4M"/>
+                        <constraint firstItem="zFj-5A-66Z" firstAttribute="leading" secondItem="jSA-Af-U66" secondAttribute="leading" constant="20" id="Cab-58-Hdo"/>
+                        <constraint firstAttribute="trailing" secondItem="zFj-5A-66Z" secondAttribute="trailing" constant="20" id="DQQ-wO-DxW"/>
+                        <constraint firstItem="zFj-5A-66Z" firstAttribute="top" secondItem="jSA-Af-U66" secondAttribute="top" constant="20" id="Q4J-hn-Cbe"/>
+                        <constraint firstAttribute="bottom" secondItem="zFj-5A-66Z" secondAttribute="bottom" constant="20" id="XYt-je-4TO"/>
                     </constraints>
                 </view>
             </subviews>
@@ -71,6 +91,7 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
             <connections>
+                <outlet property="backgroundView" destination="zFj-5A-66Z" id="ZZA-S7-Wcn"/>
                 <outlet property="expressionTextField" destination="zhc-FQ-TPR" id="OLo-XN-9Zq"/>
                 <outlet property="resultTextField" destination="24H-1F-mzj" id="u2d-v5-cRa"/>
             </connections>
